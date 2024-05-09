@@ -1,0 +1,12 @@
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+setxkbmap -layout ee -variant us &
+xrdb -load ~/.Xresources &
+xset b off &
+
+gentoo-pipewire-launcher &
+
+xrandr --auto
+
+emacs --daemon -f exwm-randr-enable -f exwm-enable
+exec dbus-run-session emacsclient -c
