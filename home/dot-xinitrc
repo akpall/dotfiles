@@ -6,7 +6,4 @@ xset b off &
 
 gentoo-pipewire-launcher &
 
-xrandr --auto
-
-emacs --daemon -f exwm-randr-enable -f exwm-enable
-exec dbus-run-session emacsclient -c
+exec dbus-run-session emacs -f exwm-enable
