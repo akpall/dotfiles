@@ -19,6 +19,9 @@
 ;; ensures files end with a newline
 (setq require-final-newline t)
 
+(add-hook 'before-save-hook (lambda ()
+			      (whitespace-cleanup)))
+
 ;; loads all .el files in the "packages" directory
 (let
     ((packages
