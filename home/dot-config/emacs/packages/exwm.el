@@ -9,6 +9,7 @@
 				 (,(kbd "s-B") . (lambda ()
 						   (interactive)
 						   (start-process "firefox" nil "firefox")))
+				 (,(kbd "S-s-<return>") . vterm)
 				 (,(kbd "<XF86AudioMute>") . (lambda ()
 							       (interactive)
 							       (pulseaudio-control-toggle-current-sink-mute)))
