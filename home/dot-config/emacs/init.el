@@ -1,11 +1,9 @@
 ;; adds MELPA to package archives and initializes
-(require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
 ;; loads use-package and sets default options
-(require 'use-package)
 (setq use-package-always-defer t
       use-package-always-ensure t)
 

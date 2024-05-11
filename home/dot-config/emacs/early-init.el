@@ -13,3 +13,6 @@
 
 ;; sets "Dina" as the default font
 (add-to-list 'default-frame-alist '(font . "Dina"))
+
+(require 'package)
+(require 'use-package)
