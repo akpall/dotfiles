@@ -38,6 +38,10 @@
   :hook
   (exwm-update-class . (lambda ()
 			 (exwm-workspace-rename-buffer exwm-class-name)))
+  (exwm-update-title . (lambda ()
+			 (exwm-workspace-rename-buffer (format "%s: %s"
+							       exwm-class-name
+							       exwm-title))))
   :config
   (require 'exwm-randr)
   (exwm-randr-enable))
