@@ -42,6 +42,10 @@
 			 (exwm-workspace-rename-buffer (format "%s: %s"
 							       exwm-class-name
 							       exwm-title))))
+  (exwm-manage-finish . (lambda ()
+			  (when (and exwm-class-name
+				     (string= exwm-class-name "firefox"))
+			    (exwm-input-set-local-simulation-keys nil))))
   :config
   (require 'exwm-randr)
   (exwm-randr-enable))
