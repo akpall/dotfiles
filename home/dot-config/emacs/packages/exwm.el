@@ -48,4 +48,6 @@
 			    (exwm-input-set-local-simulation-keys nil))))
   :config
   (require 'exwm-randr)
-  (exwm-randr-enable))
+  (require 'exwm-systemtray)
+  (exwm-randr-enable)
+  (exwm-systemtray-enable))
