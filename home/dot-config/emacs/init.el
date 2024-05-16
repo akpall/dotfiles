@@ -33,9 +33,12 @@
 (add-hook 'before-save-hook (lambda ()
 			      (whitespace-cleanup)))
 
+;; enables display-line-numbers-mode in prog-mode
+(add-hook 'prog-mode-hook (lambda ()
+			    (display-line-numbers-mode)))
+
 ;; enable various modes
 (delete-selection-mode)
-(global-display-line-numbers-mode)
 (display-time-mode)
 (display-battery-mode)
 
