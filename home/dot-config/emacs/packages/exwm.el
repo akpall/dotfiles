@@ -19,6 +19,12 @@
 				 (,(kbd "<XF86AudioRaiseVolume>") . (lambda ()
 								      (interactive)
 								      (pulseaudio-control-increase-sink-volume 1)))
+				 (,(kbd "<XF86MonBrightnessDown>") . (lambda ()
+								       (interactive)
+								       (start-process "" nil "xbacklight" "-dec" "10")))
+				 (,(kbd "<XF86MonBrightnessUp>") . (lambda ()
+								     (interactive)
+								     (start-process "" nil "xbacklight" "-inc" "10")))
 				 ,@(mapcar (lambda (i)
 					     `(,(kbd (format "s-%d" i)) .
 					       (lambda ()
