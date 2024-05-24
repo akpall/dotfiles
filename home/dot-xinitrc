@@ -5,4 +5,5 @@ xset b off &
 
 gentoo-pipewire-launcher &
 
-exec emacs -f exwm-enable
+dbus-launch --exit-with-session emacs --daemon -f exwm-enable
+exec emacsclient -c
