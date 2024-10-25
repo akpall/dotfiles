@@ -56,7 +56,5 @@
 				     (string= exwm-class-name "firefox"))
 			    (exwm-input-set-local-simulation-keys nil))))
   :config
-  (require 'exwm-randr)
-  (require 'exwm-systemtray)
-  (exwm-randr-enable)
-  (exwm-systemtray-enable))
+  (exwm-randr-mode)
+  (exwm-systemtray-mode))
