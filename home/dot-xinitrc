@@ -8,7 +8,7 @@ xset b off &
 gentoo-pipewire-launcher &
 
 if [ "$_HOSTNAME" = "akp.lan" ]; then
-   xrandr --output DisplayPort-2 --mode 2560x1440 --rate 120 &
+   xrandr --output DisplayPort-2 --auto &
 fi
 
 exec dbus-launch --exit-with-session emacs -f exwm-enable
