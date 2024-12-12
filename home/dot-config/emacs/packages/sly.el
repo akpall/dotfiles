@@ -1,1 +1,3 @@
-(use-package sly)
+(use-package sly
+  :config
+  (sly-symbol-completion-mode -1))
