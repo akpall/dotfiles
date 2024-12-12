@@ -16,6 +16,7 @@
       delete-old-versions t
       kept-new-versions 6
       kept-old-versions 2
+      load-prefer-newer t
       package-native-compile t
       read-extended-command-predicate #'command-completion-default-include-p
       require-final-newline t
