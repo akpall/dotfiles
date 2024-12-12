@@ -1,3 +1,5 @@
+;;; -*- no-byte-compile: t -*-
+
 ;; boosts GC threshold for faster startup, then resets
 (setq
  startup/gc-cons-threshold gc-cons-threshold
