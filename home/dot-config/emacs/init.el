@@ -43,6 +43,9 @@
 (display-time-mode)
 (display-battery-mode)
 
+;; disable spaces to tabs
+(indent-tabs-mode -1)
+
 ;; loads all .el files from the "packages" directory
 (let
     ((packages
