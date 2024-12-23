@@ -17,6 +17,6 @@ fi
 
 # Put your fun stuff here.
 
-alias emerge-update="emerge --ask --deep --jobs=$((1+$(nproc))) --newuse --update --verbose @world"
-alias emerge="emerge --ask --jobs=$((1+$(nproc)))"
+alias emerge-update="emerge --ask --deep --jobs=$(nproc) --load-average=$((1+$(nproc))) --newuse --update --verbose @world"
+alias emerge="emerge --ask --jobs=$(nproc) --load-average=$((1+$(nproc)))"
 alias sudo="sudo "
