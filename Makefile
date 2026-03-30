@@ -1,8 +1,8 @@
-stow := stow --dotfiles --target=$$HOME
+STOW := stow --dotfiles --target=$$HOME
 
-stow:
-	$(stow) \
+default:
+	$(STOW) \
 	  bash \
 	  emacs \
 	  sway
-.PHONY: stow
+.PHONY: default

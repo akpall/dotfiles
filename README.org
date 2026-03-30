@@ -1,0 +1,6 @@
+* dotfiles
+
+To install dotfiles, run:
+#+begin_src
+$ make
+#+end_src
