@@ -1,5 +1,0 @@
-(use-package which-key
-  :init
-  (setq which-key-side-window-location 'left)
-  :config
-  (which-key-mode))

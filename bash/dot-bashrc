@@ -17,15 +17,6 @@ fi
 
 # Put your fun stuff here.
 
-export EDITOR="emacsclient --socket-name=/run/user/$(id -u)/emacs/server -nw"
-export VISUAL="emacsclient --socket-name=/run/user/$(id -u)/emacs/server -c"
-export LIBGUESTFS_PATH="/usr/share/guestfs/appliance"
-if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-fi
-export GPG_TTY=$(tty)
-unset SSH_AGENT_PID
-
 alias emerge-update="emerge --ask --deep --jobs=$(nproc) --load-average=$((1+$(nproc))) --newuse --update --verbose @world"
 alias emerge="emerge --ask --jobs=$(nproc) --load-average=$((1+$(nproc)))"
 alias sudo="sudo "
