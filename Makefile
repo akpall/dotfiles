@@ -3,5 +3,7 @@ STOW := stow --dotfiles --target=$$HOME
 default:
 	$(STOW) \
 	  bash \
-	  emacs
+	  emacs \
+	  mango \
+	  noctalia
 .PHONY: default
