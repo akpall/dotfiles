@@ -73,20 +73,26 @@ popup_shadows = false
     [shell.panel]
     shadow = false
 
+    [shell.screenshot]
+    directory = "/home/fw13/Pictures/Screenshots"
+
 [theme]
 builtin = "Ayu"
 community_palette = "Ayu Red"
-wallpaper_scheme = "m3-content"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "mango", "qt" ]
     community_ids = [ "heroiclauncher" ]
 
-[wallpaper.default]
-path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+[wallpaper]
+directory = "/home/fw13/Pictures/Wallpapers"
 
-[wallpaper.last]
-path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+    [wallpaper.automation]
+    enabled = true
+    interval_seconds = 60
 
 [weather]
 enabled = false
